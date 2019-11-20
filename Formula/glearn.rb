@@ -8,11 +8,11 @@ class Glearn < Formula
 
   if OS.mac?
     url "https://github.com/Galvanize-IT/glearn-cli/releases/download/v0.1.4/glearn-cli_0.1.4_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "061131efd6ba03654419e3ad5305af07426f6d754f0e3d4d4681608ea0c2e484"
+    sha256 "88c08eff38c252194cc3159ae2991c426af3958168810df1094f350d3e0c627b"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/Galvanize-IT/glearn-cli/releases/download/v0.1.4/glearn-cli_0.1.4_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "d08540d00122e7b67f442643eca0e89d2ca14ababb24277c7377bb682dc8505a"
+      sha256 "65b878e5de66633eb8dad33edebf2187ff5e42dd86b8825e2266f4f9646b3005"
     end
   end
   
