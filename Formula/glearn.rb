@@ -3,16 +3,16 @@ require_relative "../lib/custom_download_strategy"
 class Glearn < Formula
   desc "Long description for glearn-cli"
   homepage ""
-  version "0.2.0"
+  version "0.2.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Galvanize-IT/glearn-cli/releases/download/v0.2.0/glearn-cli_0.2.0_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "bfbedd7f3558f64d71cdf9c125da45ee68b457355ea6daabbab37fc600db800b"
+    url "https://github.com/Galvanize-IT/glearn-cli/releases/download/v0.2.1/glearn-cli_0.2.1_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "57ca8a5d5957e9795c0a8c480a0b4b7077a8124db640c06764bc65db06210aa9"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/Galvanize-IT/glearn-cli/releases/download/v0.2.0/glearn-cli_0.2.0_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "ca1385531b48ab7bca34bf0b2217d72d4d8a71a485be49d5b5ddcda6130e538b"
+      url "https://github.com/Galvanize-IT/glearn-cli/releases/download/v0.2.1/glearn-cli_0.2.1_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "4d869557f8550c39ab3d04a8ce9f5da33da7a9a2fc6d8d32fc4d3d823d232660"
     end
   end
   
