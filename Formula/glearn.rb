@@ -2,16 +2,16 @@
 class Glearn < Formula
   desc "Long description for glearn-cli"
   homepage ""
-  version "0.3.0"
+  version "0.3.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gSchool/glearn-cli/releases/download/v0.3.0/glearn-cli_0.3.0_Darwin_x86_64.tar.gz"
-    sha256 "e664e684c4fc92dddb6dc857d8f47f5cee30b3325a973d7f295ea576d7932595"
+    url "https://github.com/gSchool/glearn-cli/releases/download/v0.3.1/glearn-cli_0.3.1_Darwin_x86_64.tar.gz"
+    sha256 "9d258836fdcb7cf91a192d2f6f6f95a08f8ac0910cd2f49489d46e104482c952"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.3.0/glearn-cli_0.3.0_Linux_x86_64.tar.gz"
-      sha256 "20855ef612de9aa6582323df3746dfec799d85cb0fc1d1156d91332c50199380"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.3.1/glearn-cli_0.3.1_Linux_x86_64.tar.gz"
+      sha256 "93feb94d5a1cece18b01ad6356256505cd0b0a037c5857ecd5425a08e9772205"
     end
   end
   
