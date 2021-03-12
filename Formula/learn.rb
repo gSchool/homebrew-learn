@@ -2,18 +2,19 @@
 class Learn < Formula
   desc "Learn curriculum publishing tool © Galvanize, Inc."
   homepage ""
-  version "0.8.10"
+  version "0.8.11"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gSchool/glearn-cli/releases/download/v0.8.10/glearn-cli_0.8.10_Darwin_x86_64.tar.gz"
-    sha256 "42c6b4c0936f6e4c43e6b86a80578f747225d326d1bf0bf8627aae9dda89e395"
+    url "https://github.com/gSchool/glearn-cli/releases/download/v0.8.11/glearn-cli_0.8.11_Darwin_x86_64.tar.gz"
+    sha256 "825c874a419cbaefd043c05f30800a5f2a9705da10a11b1f14734e2dbabbbc11"
+  elsif OS.linux?
+    if Hardware::CPU.intel?
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.8.11/glearn-cli_0.8.11_Linux_x86_64.tar.gz"
+      sha256 "df2d08f34b54f543a1bc97f9c24d94d9ec02ecd30c0e76cde537a5474b2d5977"
+    end
   end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/gSchool/glearn-cli/releases/download/v0.8.10/glearn-cli_0.8.10_Linux_x86_64.tar.gz"
-    sha256 "de413b4c043adff4ff2cf45cae7280c24cc0dad5423ece3eac8978779ed01d24"
-  end
-
+  
   depends_on "git"
   depends_on "zsh"
 
