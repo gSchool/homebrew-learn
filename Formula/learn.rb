@@ -2,16 +2,16 @@
 class Learn < Formula
   desc "Learn curriculum publishing tool © Galvanize, Inc."
   homepage ""
-  version "0.8.17"
+  version "0.8.18"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gSchool/glearn-cli/releases/download/v0.8.17/glearn-cli_0.8.17_Darwin_x86_64.tar.gz"
-    sha256 "3f3b3fdbc6e4df83104bf1a2744e6120ef84450a5f31ff2c0b81741132176fa5"
+    url "https://github.com/gSchool/glearn-cli/releases/download/v0.8.18/glearn-cli_0.8.18_Darwin_x86_64.tar.gz"
+    sha256 "b2aae5433ec2772562393b58521b4ba47a45771d9dee71f25e50899f01a92239"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.8.17/glearn-cli_0.8.17_Linux_x86_64.tar.gz"
-      sha256 "d9a923568bb31ebb203740d1af9c3859a663b95ebe9a997190c6898d4390230d"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.8.18/glearn-cli_0.8.18_Linux_x86_64.tar.gz"
+      sha256 "4d7f5ce41ba61988b779c7ae083c3c4e846569643008fe312875fc7e97fbe521"
     end
   end
   
