@@ -5,28 +5,28 @@
 class Learn < Formula
   desc "Learn curriculum publishing tool © Galvanize, Inc."
   homepage ""
-  version "0.8.21"
+  version "0.9.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pabranch/glearn-cli/releases/download/v0.8.21/glearn-cli_0.8.21_Darwin_x86_64.tar.gz"
-      sha256 "c61d4a56cf4340c57f1ceabde43a95649faf85d74adddaef2daa4adfbda7d305"
+      url "https://github.com/pabranch/glearn-cli/releases/download/v0.9.0/glearn-cli_0.9.0_Darwin_x86_64.tar.gz"
+      sha256 "bba7fac6a65b492fdf5e9ddd621edc4367cdf7e646a0d267d7508cb85ae54f10"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pabranch/glearn-cli/releases/download/v0.8.21/glearn-cli_0.8.21_Darwin_arm64.tar.gz"
-      sha256 "91111fc419534df79b955759b7280ec9b8b55c16dba5108d3b7871d8b996710a"
+      url "https://github.com/pabranch/glearn-cli/releases/download/v0.9.0/glearn-cli_0.9.0_Darwin_arm64.tar.gz"
+      sha256 "7e94990b4943b0d196fa29cf004d08003013141b2655fcef13c565222b6c3a81"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/pabranch/glearn-cli/releases/download/v0.8.21/glearn-cli_0.8.21_Linux_x86_64.tar.gz"
-      sha256 "02037007c438d52cd991033588980398139adc76e4f27a9edf983421f415e939"
+      url "https://github.com/pabranch/glearn-cli/releases/download/v0.9.0/glearn-cli_0.9.0_Linux_x86_64.tar.gz"
+      sha256 "c3bb7d5dd57e1298f6c1103684aff4f3b9c57fc6d875be418140eb538cd16d7c"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pabranch/glearn-cli/releases/download/v0.8.21/glearn-cli_0.8.21_Linux_arm64.tar.gz"
-      sha256 "4edfafe12dedcee0f10ab7aab1c2e0b1fcfc2af5837d37b7a3b3c67a06cbb904"
+      url "https://github.com/pabranch/glearn-cli/releases/download/v0.9.0/glearn-cli_0.9.0_Linux_arm64.tar.gz"
+      sha256 "b094317769266258a046bb1e256c872e64be6dafe822e072cbef27f79d03796c"
     end
   end
 
