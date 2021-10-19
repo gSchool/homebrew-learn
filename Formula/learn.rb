@@ -5,28 +5,28 @@
 class Learn < Formula
   desc "Learn curriculum publishing tool © Galvanize, Inc."
   homepage ""
-  version "0.9.1"
+  version "0.9.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.1/glearn-cli_0.9.1_Darwin_arm64.tar.gz"
-      sha256 "d2c7e0f0d575157286cf599057dbd78ae4eadf46be7e7f21997d69274746e88d"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.2/glearn-cli_0.9.2_Darwin_arm64.tar.gz"
+      sha256 "cd621c2051e1a216db6e0ea0e6cc5203406c86c4d5218b6a275619b6c7cb3f1e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.1/glearn-cli_0.9.1_Darwin_x86_64.tar.gz"
-      sha256 "a1809e4ffe69b18f5cf75ef6f559a66fa37b88269063a1ba04a96dce6a2782c6"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.2/glearn-cli_0.9.2_Darwin_x86_64.tar.gz"
+      sha256 "88fb85736eafe7fb396031fca4de9a87c4722cddbdbf91acd8687a24d2dddf3f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.1/glearn-cli_0.9.1_Linux_x86_64.tar.gz"
-      sha256 "1a591aed2ccb244ff20efd6ffe68381763c7e8b4b619de0e31cb818f83e4b8b5"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.2/glearn-cli_0.9.2_Linux_x86_64.tar.gz"
+      sha256 "e9659ff70788cf4004c31439ed6a5b99e1d034e06813dd461017c9953bdb0760"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.1/glearn-cli_0.9.1_Linux_arm64.tar.gz"
-      sha256 "c1ca59ebe4fc201a02925332e65af1d8f3a237ca9a4e7fe62aab60b4a97fac86"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.2/glearn-cli_0.9.2_Linux_arm64.tar.gz"
+      sha256 "9182d5bfe1e55b5c416aaa32b2c2644cd4b31eb16281ef59c7f6ecae41646dc3"
     end
   end
 
