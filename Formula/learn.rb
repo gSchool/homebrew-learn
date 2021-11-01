@@ -5,35 +5,46 @@
 class Learn < Formula
   desc "Learn curriculum publishing tool © Galvanize, Inc."
   homepage ""
-  version "0.9.2"
-  bottle :unneeded
+  version "0.9.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.2/glearn-cli_0.9.2_Darwin_arm64.tar.gz"
-      sha256 "cd621c2051e1a216db6e0ea0e6cc5203406c86c4d5218b6a275619b6c7cb3f1e"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.3/glearn-cli_0.9.3_Darwin_arm64.tar.gz"
+      sha256 "a0e2ec6c9d2009573303772ae5960ac5de9a0228dc728cec84aac7d21ce60651"
+
+      def install
+        bin.install "learn"
+      end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.2/glearn-cli_0.9.2_Darwin_x86_64.tar.gz"
-      sha256 "88fb85736eafe7fb396031fca4de9a87c4722cddbdbf91acd8687a24d2dddf3f"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.3/glearn-cli_0.9.3_Darwin_x86_64.tar.gz"
+      sha256 "5e28c51a46afc2a8ae887decbcab4e19d16e2ddae6166c3542e313a2d42b243d"
+
+      def install
+        bin.install "learn"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.2/glearn-cli_0.9.2_Linux_x86_64.tar.gz"
-      sha256 "e9659ff70788cf4004c31439ed6a5b99e1d034e06813dd461017c9953bdb0760"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.3/glearn-cli_0.9.3_Linux_x86_64.tar.gz"
+      sha256 "4e9a3a0825f85adf5ffcd8feb7298d2f12a3a3bdb58fba7e3f6be08862401964"
+
+      def install
+        bin.install "learn"
+      end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.2/glearn-cli_0.9.2_Linux_arm64.tar.gz"
-      sha256 "9182d5bfe1e55b5c416aaa32b2c2644cd4b31eb16281ef59c7f6ecae41646dc3"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.9.3/glearn-cli_0.9.3_Linux_arm64.tar.gz"
+      sha256 "4bc5970356af0de3f218c03e4d8bc4941555adb4db590b8efa5f2fc44f34c3fb"
+
+      def install
+        bin.install "learn"
+      end
     end
   end
 
   depends_on "git"
   depends_on "zsh"
-
-  def install
-    bin.install "learn"
-  end
 end
