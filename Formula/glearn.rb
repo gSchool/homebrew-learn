@@ -3,7 +3,6 @@ class Glearn < Formula
   desc "Long description for glearn-cli"
   homepage ""
   version "0.3.1"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gSchool/glearn-cli/releases/download/v0.3.1/glearn-cli_0.3.1_Darwin_x86_64.tar.gz"
