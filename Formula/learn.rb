@@ -5,46 +5,35 @@
 class Learn < Formula
   desc "Learn curriculum publishing tool © Galvanize, Inc."
   homepage ""
-  version "0.10.0"
+  version "0.10.1"
+  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.0/glearn-cli_0.10.0_Darwin_arm64.tar.gz"
-      sha256 "c4049677e65f8725554986879c5dc2eed64e70af30f278a8de9f4818ff2e7392"
-
-      def install
-        bin.install "learn"
-      end
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.1/glearn-cli_0.10.1_Darwin_arm64.tar.gz"
+      sha256 "29fcd202db17c90c288a322053ae9ac75f46420996eb5136adf0c0c639fc712b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.0/glearn-cli_0.10.0_Darwin_x86_64.tar.gz"
-      sha256 "d5295e4167e49c2948a8333949f3cc61a6ae8061091224c248dc9bab8841435b"
-
-      def install
-        bin.install "learn"
-      end
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.1/glearn-cli_0.10.1_Darwin_x86_64.tar.gz"
+      sha256 "9ea8b45636c6c17dc653ed551b1d927b0adb1d3eca07ee583975c4146740c900"
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.0/glearn-cli_0.10.0_Linux_arm64.tar.gz"
-      sha256 "ff34bb2214ce25de7ec0715af2a5dd5938924b40d85e196f66192994771875bb"
-
-      def install
-        bin.install "learn"
-      end
-    end
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.0/glearn-cli_0.10.0_Linux_x86_64.tar.gz"
-      sha256 "5e1f8177230a7f0312753652d80135437d2ea25788efb38c04c366143ac36d9c"
-
-      def install
-        bin.install "learn"
-      end
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.1/glearn-cli_0.10.1_Linux_x86_64.tar.gz"
+      sha256 "3cb92b3a29ac7e8cb8718da7ab51b890a20700d6dfdade9ceeb129a101bfc9b8"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.1/glearn-cli_0.10.1_Linux_arm64.tar.gz"
+      sha256 "110885a7e08abd581d47485eb8fa3d45a0db7cfa42a52c216f939b059391228b"
     end
   end
 
   depends_on "git"
   depends_on "zsh"
+
+  def install
+    bin.install "learn"
+  end
 end
