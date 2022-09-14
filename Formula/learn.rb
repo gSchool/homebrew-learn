@@ -5,20 +5,20 @@
 class Learn < Formula
   desc "Learn curriculum publishing tool © Galvanize, Inc."
   homepage ""
-  version "0.10.6"
+  version "0.10.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.6/glearn-cli_0.10.6_Darwin_arm64.tar.gz"
-      sha256 "cadb1c16c1451e0d24b7b8a986cfdfec839a80db4c702ca0299193de6a978cd7"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.7/glearn-cli_0.10.7_Darwin_arm64.tar.gz"
+      sha256 "5e8e0eabf866fbee301dea7b276123372bbe0c80fe03bd635aba19b9313aeb88"
 
       def install
         bin.install "learn"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.6/glearn-cli_0.10.6_Darwin_x86_64.tar.gz"
-      sha256 "58c0a15ea21a01c76268434bdd9ee56b75bf5f7fada71c109ad13986e4bb5928"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.7/glearn-cli_0.10.7_Darwin_x86_64.tar.gz"
+      sha256 "c1c4b99e24a185116ec491f299b9d3f554ca8a90fead84a777481e6dad40fa7d"
 
       def install
         bin.install "learn"
@@ -28,16 +28,16 @@ class Learn < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.6/glearn-cli_0.10.6_Linux_arm64.tar.gz"
-      sha256 "64724e1a5938106540e21cd1d257aebb0db8503af008af49583d8e06395fea63"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.7/glearn-cli_0.10.7_Linux_arm64.tar.gz"
+      sha256 "02d29d735b3209282af63a789f66062a91187e242c627f2163e2217181b438fa"
 
       def install
         bin.install "learn"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.6/glearn-cli_0.10.6_Linux_x86_64.tar.gz"
-      sha256 "8745a985f5039c1da5d39a26909025ac9bedc2b6780ce5f370b2b809f12f1337"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.7/glearn-cli_0.10.7_Linux_x86_64.tar.gz"
+      sha256 "31ab518e85ccaa777a0926d20c9206ffe6c3c831db02fd3fb87d9f127adf1c54"
 
       def install
         bin.install "learn"
