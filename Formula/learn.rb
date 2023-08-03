@@ -5,20 +5,20 @@
 class Learn < Formula
   desc "Learn curriculum publishing tool © Galvanize, Inc."
   homepage ""
-  version "0.10.10"
+  version "0.10.11"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.10/glearn-cli_0.10.10_Darwin_arm64.tar.gz"
-      sha256 "9636f437b0a94a4e92de9a203c727a32c910da84960316e64e5dd0b9785ec771"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.11/glearn-cli_0.10.11_Darwin_arm64.tar.gz"
+      sha256 "cf39a2192948fb189779249f4cc692ceb0353b726fc55771fdb3fac7f28ffb5e"
 
       def install
         bin.install "learn"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.10/glearn-cli_0.10.10_Darwin_x86_64.tar.gz"
-      sha256 "011b93a1cb428c3212f96f6d440d7a6fd24c33b7b113afc42c4d3f50e2e61516"
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.11/glearn-cli_0.10.11_Darwin_x86_64.tar.gz"
+      sha256 "b8aa199ecb7eaf29e0436143bfe27d2487a86f9867bb2c25096e4130f65b202f"
 
       def install
         bin.install "learn"
@@ -27,17 +27,17 @@ class Learn < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.10/glearn-cli_0.10.10_Linux_arm64.tar.gz"
-      sha256 "63bfdb8bedffa397ab1c8ca0ac60afaa9a557cc70b7929a46dc7496b39e0d984"
+    if Hardware::CPU.intel?
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.11/glearn-cli_0.10.11_Linux_x86_64.tar.gz"
+      sha256 "fb24a566e03a55f4c73c6547856626957d566e5cc5c1aaea74f9d744555f2612"
 
       def install
         bin.install "learn"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.10/glearn-cli_0.10.10_Linux_x86_64.tar.gz"
-      sha256 "6956d37210aa8c6e0ee1893db89ba251058d17566cfb58251c89c0d820e15ee2"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/gSchool/glearn-cli/releases/download/v0.10.11/glearn-cli_0.10.11_Linux_arm64.tar.gz"
+      sha256 "26fbcc2cef0c9ce133052a05a5d927b14f8d26d36272e64934ac9c502f99fc6e"
 
       def install
         bin.install "learn"
